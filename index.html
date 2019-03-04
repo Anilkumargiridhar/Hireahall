@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+<body>   
+        <div class="head">   
+                <h1 class="h1Head"><small>LOOKING FOR <small class="venue">VENUES?</small></small></h1>
+                <h1 class="h1Head quo"><small><q>make your occasion easy and simple with your own choices</q></small></h1>
+                <div class="h1Head btn btn-primary text-center bookNow mt-2" onclick="bookNow()"><i class="fa fa-map-marker bookMarker mr-2"></i>BOOK NOW</div>
+        <div class="slideshow">
+                <div class="slideshow-image" style="background-image: url('https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+                </div>
+                <div class="slideshow-image" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')"></div>
+                <div class="slideshow-image" style="background-image: url('https://images.pexels.com/photos/1199605/pexels-photo-1199605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"></div>
+                <div class="slideshow-image" style="background-image: url('https://images.pexels.com/photos/256737/pexels-photo-256737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')"></div>
+              </div>
+              <nav role='navigation' id="mainnav">
+                    <br><br><br>
+                  <ul class="gap">
+                    <li id="listNav"><a href="login.html">LOGIN/SIGN UP</a></li>
+                    <li id="listNav"><a href="venues.html">BROWSE VENUES</a></li>
+                    <li id="listNav"><a href="#?">WISHLISTS</a></li>
+                    <li id="listNav"><a href="#?">SERVICES</a></li>
+                    <li id="listNav"><a href="#contactId">CONTACT US</a></li>
+                  </ul>
+                </nav>  
+                <div class="hamb">
+                  <a href="#"><i class="fa fa-bars"></i></a><span class="text-white ml-4 hireHead h2">HireaHall</span>
+                </div>
+                <canvas id="bubble"></canvas>
+</div>
+<div class="descrip">
+  <div class="h1 tell text-center">Tell us about your Event</div>
+    <div class="wrapper">
+        <div class="product">
+          <div class="product__media">
+            <img src="https://images.pexels.com/photos/1589216/pexels-photo-1589216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=950&w=940" alt="" height="600px"/>
+            <div class="product__overlay"></div>
+          </div>
+          <div class="product__info">
+            <div class="product__info__text">
+              <p class="title">Weddings</p>
+              <p class="price">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, atque.</p>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__media">
+            <img src="https://images.pexels.com/photos/1559051/pexels-photo-1559051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+            <div class="product__overlay"></div>
+          </div>
+          <div class="product__info">
+            <div class="product__info__text">
+                <p class="title">Parties</p>
+              <p class="price">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, doloribus!</p>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__media">
+            <img src="https://images.pexels.com/photos/1054974/pexels-photo-1054974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+            <div class="product__overlay"></div>
+          </div>
+          <div class="product__info">
+            <div class="product__info__text">
+              <p class="title">Meetings</p>
+              <p class="price">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, doloribus!</p>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__media">
+            <img src="https://images.pexels.com/photos/1655329/pexels-photo-1655329.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+            <div class="product__overlay"></div>
+          </div>
+          <div class="product__info">
+            <div class="product__info__text">
+                <p class="title">Get togethers</p>
+                <p class="price">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, doloribus!</p>
+            </div>
+          </div>
+        </div>
+      <</div>
+<div class="eventsList">
+  <div id="offerIntro" style="background: url('https://i.ibb.co/2K5cMW6/an.jpg');background-attachment: fixed;">
+    <div class="container">
+    <div class="row mt-5 offerTop">
+      <div class="col-md-4">
+          <div class="card" onmouseover="hoverImg1()" onmouseout="mouseOut()">
+              <img src="https://i.ibb.co/7gZqsH6/web.png" alt="monitor" class="card-img-top mt-4" id="hoverImg1" style="height: 100px !important;width: 100px !important;display: block;margin-left: auto;margin-right: auto;">
+              <div class="card-block">
+                <h2 class="card-title text-center mt-5 font-weight-bold">Web Design</h2>
+                <p class="card-text text-justify text-center">I have experience in designing good and unique websites.</p>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card" onmouseover="hoverImg2()" onmouseout="mouseOut2()">
+              <img src="https://i.ibb.co/PGtdxzL/responsive.png" alt=Design" class="card-img-top mt-4" id="hoverImg2" style="height: 100px !important;width: 100px !important;display: block;margin-left: auto;margin-right: auto;">              
+              <div class="card-block">
+                <h2 class="card-title text-center mt-5 font-weight-bold">UI Design</h2>
+                <p class="card-text text-justify text-center">I love designing a user interface design which is user friendly and easy to navigate.</p>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card" onmouseover="hoverImg3()" onmouseout="mouseOut3()">
+              <img src="https://i.ibb.co/L1PwZ7r/social-media.png" alt="mobile app" class="card-img-top mt-4" id="hoverImg3" style="height: 100px !important;width: 100px !important;display: block;margin-left: auto;margin-right: auto;">
+              <div class="card-block">
+                <h2 class="card-title text-center mt-5 font-weight-bold">App Development</h2>
+                <p class="card-text text-justify text-center">I have prior knowledge on how to develop an app using React native.</p>
+              </div>
+            </div>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="why">
+  <div class="h1 text-center font-weight-bold">Why us?</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" style="background:url('https://www.freepngimg.com/thumb/color_effects/4-2-color-effects-png-images.png'); ">
+        <div class="text-center align-content-center justify-content-center">
+        <img src="https://www.legalzoom.com/resources/img/heroes/why-us-hero.svg" alt="" class="feaImg">
+      </div>
+      </div>
+    <div class="col-md-8 py-4">
+        <div class="row">
+            <div class="col">
+              <div class="text-center">
+      <div class=" justify-content-center align-content-center"><img src="images/venue.png" class="icoImg"></div>	
+      <div class="h4">Fast way</div>
+      <div class="h6">Find the fastest way to Browse <br> your favourite venus</div>
+      </div>		
+            </div>
+      <div class="col-md-6">
+        <div class="text-center">
+      <div class=" justify-content-center align-content-center"><img src="images/money.png" class="icoImg"></div>	
+      <div class="h4">Budget friendly</div>
+      <div class="h6">We provide venues according to your comfort and budget friendly</div>
+      </div>
+      </div>
+
+      <div class="w-100 py-5"></div>
+      <div class="col-md-6 mtop">
+        <div class="text-center">
+      <div class=" justify-content-center align-content-center"><img src="images/customize.png" class="icoImg"></div>	
+      <div class="h4">Customize</div>
+      <div class="h6">You can customize your own events and perform according to the plan</div>
+      </div>
+      </div>
+      <div class="col-md-6">
+        <div class="text-center">
+      <div class=" justify-content-center align-content-center"><img src="images/location.png" class="icoImg"></div>	
+      <div class="h4">Venue details</div>
+      <div class="h6">We provide each and every single detail about the preffered venue</div>
+      </div>		
+      </div>
+    </div>
+  </div>		
+  </div>		
+  </div>		 
+</div>
+<div class="weDo">
+    <div class="h1 text-center font-weight-bold">THIS IS HOW WE DO</div>
+    <div id="gallery" class="container-fluid mt-5z">  
+        <img src="https://images.pexels.com/photos/1555200/pexels-photo-1555200.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card img-responsive">
+        <img src="https://cdn.pixabay.com/photo/2016/11/22/19/05/couple-1850073_960_720.jpg" class="card img-responsive"> 
+        <img src="https://images.pexels.com/photos/265722/pexels-photo-265722.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card img-responsive">
+        <img src="https://images.pexels.com/photos/759668/pexels-photo-759668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card img-responsive">
+        <img src="https://images.pexels.com/photos/919745/pexels-photo-919745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card img-responsive">
+        <img src="https://images.pexels.com/photos/787961/pexels-photo-787961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card img-responsive">
+        <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card img-responsive">
+        <img src="https://cdn.pixabay.com/photo/2016/06/29/04/39/wedding-dresses-1486005_960_720.jpg" class="card img-responsive">
+        <img src="https://cdn.pixabay.com/photo/2015/09/02/13/04/marriage-918864_960_720.jpg" class="card img-responsive">
+      </div>
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="contact">
+  <div class="container" id="contactId">
+    <div class="text-center h1 get">GET IN TOUCH WITH US</div>
+    <div class="form contText">
+    <div class="row">
+      <div class="col-md-4">
+        <input type="text" name="some" id="listText" placeholder="Name *">
+      </div>
+      <div class="col-md-4">
+        <input type="email" name="some" id="listText" placeholder="Email *">
+      </div>
+      <div class="col-md-4">
+        <input type="text" name="some" id="listText" placeholder="Phone *">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <textarea name="textbox" id="textBox" class="mt-5" rows="10" placeholder="Enter your text here"></textarea>
+        <div class="btn msgBtn btn-primary mt-3">Send Message</div>
+      </div>
+      <div class="col-md-4">
+        <div class="social">
+          <h2>Social Media</h2>
+          <button class="icon-btn twitter"> 
+          <a class="link" href="https://twitter.com/" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <button class="icon-btn facebook ml-3"> 
+          <a class="link" href="https://www.facebook.com/" target="_blank">
+            <i class="fa fa-facebook"></i> 
+          </a>
+          <button class="icon-btn google-plus ml-3"> 
+          <a class="link" href="https://plus.google.com/" target="_blank">
+            <i class="fa fa-google-plus"></i> 
+          </a>
+          <button class="icon-btn instagram ml-3"> 
+          <a class="link" href="https://www.instagram.com/"  target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>       
+<footer class="footer-area footer">
+        <div class="footer-big">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-12">
+                <div class="footer-widget">
+                  <div class="widget-about">
+                    <ul class="contact-details">
+                        <div class="h6">About HireaHall</div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore harum eius placeat itaque exercitationem dolorum, quos architecto. Praesentium, explicabo et!</p>
+                      <li>
+                        <span class="icon-earphones"></span> Call Us:
+                        <a href="tel:012-345-6789">tel:012-345-6789</a>
+                      </li>
+                      <li>
+                        <span class="icon-envelope-open"></span>
+                        <a href="mailto:support@hireahall.com">hireahall.com</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="footer-widget">
+                  <div class="footerMenu footerMenu1">
+                    <h4 class="footer-widget-title">Popular Category</h4>
+                    <ul>
+                      <li>
+                        <a href="#">Venues</a>
+                      </li>
+                      <li>
+                        <a href="#">Categories</a>
+                      </li>
+                      <li>
+                        <a href="#">Browse Venues</a>
+                      </li>
+                      <li>
+                        <a href="#">Bookings</a>
+                      </li>
+                      <li>
+                        <a href="#">Weddings</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="footer-widget">
+                  <div class="footerMenu">
+                    <h4 class="footer-widget-title">Our Company</h4>
+                    <ul>
+                      <li>
+                        <a href="#">About Us</a>
+                      </li>
+                      <li>
+                        <a href="#">How It Works</a>
+                      </li>
+                      <li>
+                        <a href="#">Testimonials</a>
+                      </li>
+                      <li>
+                        <a href="#">Contact Us</a>
+                      </li>
+                      <li>
+                        <a href="#">Blog</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="footer-widget">
+                  <div class="footerMenu padding">
+                    <h4 class="footer-widget-title">Help Support</h4>
+                    <ul>
+                      <li>
+                        <a href="#">Support Forum</a>
+                      </li>
+                      <li>
+                        <a href="#">Terms &amp; Conditions</a>
+                      </li>
+                      <li>
+                        <a href="#">Support Policy</a>
+                      </li>
+                      <li>
+                        <a href="#">Refund Policy</a>
+                      </li>
+                      <li>
+                        <a href="#">FAQs</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mini-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="copyright-text">
+                  <p class="p">© 2018
+                    <a href="#">HireaHall</a>. All rights reserved. Created by
+                    <a href="#">Anil</a>
+                  </p>
+                </div>
+                <div class="go_top">
+                  <span class="icon-arrow-up"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script> 
+</body>
+</html>
